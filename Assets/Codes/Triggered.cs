@@ -5,13 +5,19 @@ using TMPro;
 public class Triggered : MonoBehaviour
 {
 
-    new int score = 0;
+    int score = 0;
     public TMP_Text scoreText;
- 
+
+    private void Start()
+    {
+        scoreText.text = "Score: 0";
+    }
+
     private void PointScore()
     {
         score += 1;
-        Debug.Log("Score: " + score);
+        scoreText.text = "Score: " + score.ToString();
+        //Debug.Log("Score: " + score);
     }
 
     private void GameOver()
@@ -22,7 +28,7 @@ public class Triggered : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Pipe"))
+        if (collision.gameObject.CompareTag("Pipes"))
         {
             Debug.Log("No more beer");
             GameOver();
@@ -34,7 +40,7 @@ public class Triggered : MonoBehaviour
 
 
         }
-        else if (collision.gameObject.CompareTag("Score"))
+        else if (collision.gameObject.CompareTag("ScoreBox"))
         {
             PointScore();
             Destroy(collision.gameObject);
