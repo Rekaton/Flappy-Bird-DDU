@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7839741737378385230}
   - component: {fileID: 3174814644085743083}
   - component: {fileID: 2228864811360435794}
+  - component: {fileID: 1028614569469429032}
   m_Layer: 0
   m_Name: Pillar Up (1)
   m_TagString: Untagged
@@ -139,10 +140,10 @@ PolygonCollider2D:
       - {x: 2.0349998, y: 5.89}
       - {x: 2.0349998, y: 5.9}
       - {x: 1.475, y: 5.9}
-      - {x: 1.005, y: 5.08}
-      - {x: -0.044999998, y: 5.5299997}
-      - {x: -0.515, y: 4.67}
-      - {x: -1.395, y: 4.67}
+      - {x: 1.2119794, y: 4.4620495}
+      - {x: 0.24477197, y: 5.2690873}
+      - {x: -0.14243725, y: 4.6425357}
+      - {x: -1.0638335, y: 3.9559247}
       - {x: -1.655, y: 5.29}
       - {x: -2.0349998, y: 5.3199997}
       - {x: -2.495, y: -1.79}
@@ -152,6 +153,52 @@ PolygonCollider2D:
       - {x: 3.5749998, y: -4.33}
       - {x: 3.2949998, y: -4}
   m_UseDelaunayMesh: 0
+--- !u!61 &1028614569469429032
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372760035835893453}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.05165291, y: -1.0872293}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 7.15, y: 11.8}
+    newSize: {x: 7.15, y: 11.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 4.0715885, y: 9.625543}
+  m_EdgeRadius: 0
 --- !u!1 &6141517033504792272
 GameObject:
   m_ObjectHideFlags: 0
@@ -163,6 +210,7 @@ GameObject:
   - component: {fileID: 7471978669488400891}
   - component: {fileID: 8176621409228888056}
   - component: {fileID: 8521092903007897307}
+  - component: {fileID: 977756414558066622}
   m_Layer: 0
   m_Name: Pillar Down
   m_TagString: Untagged
@@ -291,12 +339,12 @@ PolygonCollider2D:
       - {x: 2.0349998, y: 5.89}
       - {x: 2.0349998, y: 5.9}
       - {x: 1.475, y: 5.9}
-      - {x: 1.005, y: 5.08}
-      - {x: -0.044999998, y: 5.5299997}
-      - {x: -0.515, y: 4.67}
-      - {x: -1.395, y: 4.67}
+      - {x: 0.95733714, y: 4.5424347}
+      - {x: -0.044999998, y: 5.2824507}
+      - {x: -0.8486314, y: 4.069192}
+      - {x: -1.5985205, y: 4.67}
       - {x: -1.655, y: 5.29}
-      - {x: -2.0349998, y: 5.3199997}
+      - {x: -2.0349998, y: 5.229982}
       - {x: -2.495, y: -1.79}
       - {x: -3.5749998, y: -3.97}
       - {x: -3.5749998, y: -5.9}
@@ -304,6 +352,52 @@ PolygonCollider2D:
       - {x: 3.5749998, y: -4.33}
       - {x: 3.2949998, y: -4}
   m_UseDelaunayMesh: 0
+--- !u!61 &977756414558066622
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6141517033504792272}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.17536676, y: -1.1103616}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 7.15, y: 11.8}
+    newSize: {x: 7.15, y: 11.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 4.5595493, y: 9.579276}
+  m_EdgeRadius: 0
 --- !u!1 &8483588076114468777
 GameObject:
   m_ObjectHideFlags: 0
